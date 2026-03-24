@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-display: var(--font-instrument-serif), Georgia, serif;
+}
+
+@theme {
+  /* Brand accent */
+  --color-sienna: #C84B2F;
+  --color-sienna-dark: #a83a20;
+  --color-sienna-light: #d9694f;
+
+  /* Primary palette */
+  --color-navy: #1A2E5A;
+  --color-navy-light: #243d77;
+  --color-navy-dark: #111f3e;
+  --color-navy-muted: #1e3566;
+  --color-cream: #F5F0E8;
+  --color-cream-dark: #ede7d8;
+  --color-cream-muted: #c8bfad;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F5F0E8;
+  color: #1A2E5A;
+}
+
+::selection {
+  background-color: #C84B2F;
+  color: white;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+button {
+  appearance: none;
+}
