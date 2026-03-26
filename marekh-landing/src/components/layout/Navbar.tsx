@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from "motion/react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -23,18 +24,30 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        "bg-navy/95 backdrop-blur-md",
-        isScrolled ? "border-b border-cream/10" : "border-b border-transparent"
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
+        isScrolled
+          ? "bg-navy/80 backdrop-blur-xl border-b border-white/10 shadow-[0_4px_32px_rgba(0,0,0,0.3)]"
+          : "bg-navy/65 backdrop-blur-xl border-b border-white/10"
       )}
     >
+      {/* Top highlight line */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-sienna/40 to-transparent pointer-events-none" />
+
       <nav className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Logo */}
-        <a
-          href="#hero"
-          className="font-display text-xl text-cream hover:text-white transition-colors"
-        >
-          Marekh
+        <a href="#hero" className="flex items-center gap-2 group">
+          <div className="relative w-10 h-10 flex-shrink-0 mix-blend-screen">
+            <Image
+              src="/marekh-logo.png"
+              alt="Marekh"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+          <span className="font-display text-lg text-cream group-hover:text-white transition-colors duration-200">
+            Marekh
+          </span>
         </a>
 
         {/* Desktop nav */}
@@ -43,9 +56,10 @@ export function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className="text-sm text-cream/60 hover:text-cream transition-colors duration-200"
+              className="text-sm text-cream/80 hover:text-cream transition-colors duration-200 relative group"
             >
               {link.label}
+              <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-sienna group-hover:w-full transition-all duration-300" />
             </a>
           ))}
         </div>
@@ -53,7 +67,7 @@ export function Navbar() {
         {/* Desktop CTA */}
         <a
           href="#contact"
-          className="hidden md:inline-flex items-center gap-1.5 text-sm font-medium text-cream/60 hover:text-cream transition-colors duration-200"
+          className="hidden md:inline-flex items-center gap-1.5 text-sm font-medium text-cream/80 hover:text-cream transition-colors duration-200"
         >
           Get in Touch
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="translate-y-[0.5px]">
@@ -85,7 +99,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2, ease: "easeOut" }}
-            className="md:hidden border-t border-cream/10 bg-navy px-6 py-4 flex flex-col gap-4"
+            className="md:hidden border-t border-white/10 bg-navy/40 backdrop-blur-xl px-6 py-4 flex flex-col gap-4"
           >
             {navLinks.map((link) => (
               <a
@@ -99,7 +113,7 @@ export function Navbar() {
             ))}
             <a
               href="#contact"
-              className="text-sm font-medium text-sienna hover:text-sienna-light transition-colors pt-1 border-t border-cream/10"
+              className="text-sm font-medium text-sienna hover:text-sienna-light transition-colors pt-1 border-t border-white/10"
               onClick={() => setMenuOpen(false)}
             >
               Get in Touch →
