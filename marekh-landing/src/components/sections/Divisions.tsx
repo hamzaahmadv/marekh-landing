@@ -28,7 +28,7 @@ export function Divisions() {
       {/* Page 1 — Marekh Polymer / Ve-prene */}
       <section id="products" className="min-h-screen bg-cream border-b border-navy/10 flex items-center">
         <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-14 py-24 lg:py-32 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-12 lg:gap-16 items-center">
           <motion.div
             className="border-t-[3px] border-t-sienna pt-8"
             variants={fadeUpVariant}
@@ -91,7 +91,7 @@ export function Divisions() {
 
           {/* Right — video */}
           <div
-            className="relative h-[60vh] lg:h-full min-h-[400px] flex items-center justify-center"
+            className="relative h-[60vh] lg:h-full min-h-[520px] flex items-center justify-center"
             style={{
               maskImage: "radial-gradient(ellipse 85% 85% at 50% 50%, black 45%, transparent 100%)",
               WebkitMaskImage: "radial-gradient(ellipse 85% 85% at 50% 50%, black 45%, transparent 100%)",
