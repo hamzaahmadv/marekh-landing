@@ -5,7 +5,7 @@ import { fadeUpVariant, staggerContainer, viewportOnce } from "@/lib/motion";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
 const brands = [
-  { name: "Bata", descriptor: "Global footwear group" },
+  { name: "Service", descriptor: "Global footwear group" },
   { name: "Pierre Cardin", descriptor: "International fashion brand" },
   { name: "Hush Puppies", descriptor: "American footwear brand" },
 ];
