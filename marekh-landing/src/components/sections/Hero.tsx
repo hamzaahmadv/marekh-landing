@@ -90,6 +90,24 @@ export function Hero() {
       >
         <IndustrialPattern />
 
+        {/* Hero video */}
+        <div
+          className="absolute inset-0 bottom-36 lg:bottom-44 flex items-center justify-center p-4 lg:p-8 pt-16 lg:pt-20"
+          style={{
+            maskImage: "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%)",
+            WebkitMaskImage: "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%)",
+          }}
+        >
+          <video
+            src="/videos/heroanimation.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-contain"
+          />
+        </div>
+
         {/* Stat chips */}
         <div className="absolute bottom-8 left-8 right-8 flex flex-col gap-3 lg:bottom-12 lg:left-10">
           <motion.div
