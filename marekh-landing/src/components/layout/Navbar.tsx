@@ -66,7 +66,9 @@ export function Navbar() {
 
         {/* Desktop CTA */}
         <a
-          href="#contact"
+          href="https://tally.so/r/rjVG8o"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden md:inline-flex items-center gap-1.5 text-sm font-medium text-cream/80 hover:text-cream transition-colors duration-200"
         >
           Get in Touch
