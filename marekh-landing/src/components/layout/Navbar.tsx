@@ -26,8 +26,8 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
         isScrolled
-          ? "bg-navy/80 backdrop-blur-xl border-b border-white/10 shadow-[0_4px_32px_rgba(0,0,0,0.3)]"
-          : "bg-navy/65 backdrop-blur-xl border-b border-white/10"
+          ? "bg-navy backdrop-blur-xl border-b border-white/10 shadow-[0_4px_32px_rgba(0,0,0,0.4)]"
+          : "bg-navy backdrop-blur-xl border-b border-white/10"
       )}
     >
       {/* Top highlight line */}
