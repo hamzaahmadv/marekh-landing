@@ -69,17 +69,16 @@ export function ContactSection() {
             viewport={viewportOnce}
             className="flex flex-col"
           >
-            <p className="text-xs uppercase tracking-wider text-cream/40 mb-6">
+            <p className="text-xs uppercase tracking-wider text-cream/60 mb-6">
               Send an Enquiry
             </p>
-            <div className="flex-1 border border-cream/15 min-h-[460px]">
-              {/* Replace FORM_ID with your actual Tally form ID */}
+            <div className="flex-1 bg-cream min-h-[460px]">
               <iframe
-                src="https://tally.so/embed/rjVG8o?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                src="https://tally.so/embed/rjVG8o?alignLeft=1&hideTitle=1&dynamicHeight=1"
                 width="100%"
-                height="460"
+                height="600"
                 title="Contact Marekh"
-                style={{ background: "transparent", border: "none" }}
+                style={{ border: "none" }}
                 className="w-full"
               />
             </div>
