@@ -62,7 +62,7 @@ export function VepreneSection() {
             whileInView="visible"
             viewport={viewportOnce}
           >
-            <SectionLabel number="03" label="Ve-prene TPR" className="mb-6 text-cream/60" />
+            <SectionLabel number="02" label="Ve-prene TPR" className="mb-6 text-cream/60" />
             <h2 className="font-display text-5xl md:text-6xl text-cream tracking-tight leading-tight mb-8">
               Engineered
               <br />

@@ -123,7 +123,7 @@ export function Divisions() {
             whileInView="visible"
             viewport={viewportOnce}
           >
-            <SectionLabel number="02" label="Distribution" className="mb-5 text-navy/40 justify-center" />
+            <SectionLabel number="03" label="Distribution" className="mb-5 text-navy/40 justify-center" />
             <h2 className="font-display text-5xl md:text-6xl xl:text-7xl text-navy tracking-tight leading-tight">
               Polymer
               <br />
