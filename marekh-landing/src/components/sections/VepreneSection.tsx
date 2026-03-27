@@ -35,7 +35,25 @@ const specs = [
 export function VepreneSection() {
   return (
     <section id="veprene" className="bg-navy border-b border-cream/10">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-20 lg:pt-28 pb-0">
+      {/* Full-width video strip at top */}
+      <motion.div
+        className="w-full overflow-hidden"
+        variants={fadeUpVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewportOnce}
+      >
+        <video
+          src="/videos/footwearmarekh.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full max-h-[55vh] object-cover"
+        />
+      </motion.div>
+
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-20 lg:pt-28 pb-20 lg:pb-28">
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-12 lg:gap-20">
           {/* Left prose */}
           <motion.div
@@ -44,19 +62,19 @@ export function VepreneSection() {
             whileInView="visible"
             viewport={viewportOnce}
           >
-            <SectionLabel number="03" label="Ve-prene TPR" className="mb-6 text-cream/40" />
-            <h2 className="font-display text-4xl md:text-5xl text-cream tracking-tight leading-tight mb-6">
+            <SectionLabel number="03" label="Ve-prene TPR" className="mb-6 text-cream/60" />
+            <h2 className="font-display text-5xl md:text-6xl text-cream tracking-tight leading-tight mb-8">
               Engineered
               <br />
-              <em className="text-cream/50 not-italic">for footwear.</em>
+              <em className="text-cream/70 not-italic">for footwear.</em>
             </h2>
-            <p className="text-sm text-cream/60 leading-relaxed mb-6">
+            <p className="text-base text-cream/80 leading-relaxed mb-6">
               Ve&#8209;prene is Marekh&apos;s proprietary thermoplastic rubber,
               developed over two decades for the footwear manufacturing industry.
               It combines the performance characteristics of vulcanised rubber
               with the processing ease of thermoplastics.
             </p>
-            <p className="text-sm text-cream/40 leading-relaxed">
+            <p className="text-base text-cream/60 leading-relaxed">
               The material is trusted by global brands and regional manufacturers
               alike for sole production, valued for its consistency, workability,
               and cost-effectiveness.
@@ -75,12 +93,12 @@ export function VepreneSection() {
                 <motion.div
                   key={s.spec}
                   variants={fadeUpVariant}
-                  className="grid grid-cols-[140px_1fr] py-4 gap-4 hover:bg-cream/5 transition-colors -mx-2 px-2 group"
+                  className="grid grid-cols-[160px_1fr] py-5 gap-4 hover:bg-cream/5 transition-colors -mx-2 px-2 group"
                 >
-                  <span className="text-xs uppercase tracking-wider text-cream/40 self-start pt-0.5 group-hover:text-cream/60 transition-colors">
+                  <span className="text-xs uppercase tracking-wider text-cream/60 self-start pt-0.5 group-hover:text-cream/80 transition-colors font-medium">
                     {s.spec}
                   </span>
-                  <span className="text-sm text-cream/70 leading-relaxed">{s.description}</span>
+                  <span className="text-base text-cream/85 leading-relaxed">{s.description}</span>
                 </motion.div>
               ))}
             </div>
@@ -90,10 +108,10 @@ export function VepreneSection() {
               variants={fadeUpVariant}
               className="mt-8 bg-sienna/10 border border-sienna/30 p-6"
             >
-              <p className="text-xs uppercase tracking-wider text-sienna mb-2">
+              <p className="text-xs uppercase tracking-wider text-sienna mb-3 font-medium">
                 Custom Formulation
               </p>
-              <p className="text-sm text-cream/70 leading-relaxed mb-4">
+              <p className="text-base text-cream/80 leading-relaxed mb-5">
                 Marekh provides technical assistance to develop tailor-made
                 materials meeting specific customer requirements. Contact our
                 team to discuss your application needs.
@@ -109,23 +127,6 @@ export function VepreneSection() {
         </div>
       </div>
 
-      {/* Full-width video strip */}
-      <motion.div
-        className="mt-16 w-full overflow-hidden"
-        variants={fadeUpVariant}
-        initial="hidden"
-        whileInView="visible"
-        viewport={viewportOnce}
-      >
-        <video
-          src="/videos/footwearmarekh.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full max-h-[55vh] object-cover"
-        />
-      </motion.div>
     </section>
   );
 }
