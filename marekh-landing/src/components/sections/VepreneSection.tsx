@@ -35,7 +35,7 @@ const specs = [
 export function VepreneSection() {
   return (
     <section id="veprene" className="bg-navy border-b border-cream/10">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-28">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-20 lg:pt-28 pb-0">
         <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-12 lg:gap-20">
           {/* Left prose */}
           <motion.div
@@ -108,6 +108,24 @@ export function VepreneSection() {
           </motion.div>
         </div>
       </div>
+
+      {/* Full-width video strip */}
+      <motion.div
+        className="mt-16 w-full overflow-hidden"
+        variants={fadeUpVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewportOnce}
+      >
+        <video
+          src="/videos/footwearmarekh.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full max-h-[55vh] object-cover"
+        />
+      </motion.div>
     </section>
   );
 }
