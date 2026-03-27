@@ -13,7 +13,7 @@ const brands = [
 export function CustomersSection() {
   return (
     <section id="customers" className="bg-cream border-b border-navy/10">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-28">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-20">
           {/* Left — brand names */}
           <div>
@@ -22,9 +22,14 @@ export function CustomersSection() {
               initial="hidden"
               whileInView="visible"
               viewport={viewportOnce}
-              className="mb-10"
+              className="mb-6"
             >
               <SectionLabel number="04" label="Customers" className="mb-6 text-navy/60" />
+              <h2 className="font-display text-4xl md:text-5xl xl:text-6xl text-navy tracking-tight leading-tight mb-5">
+                Trusted by
+                <br />
+                <em className="text-navy/50 not-italic">the industry.</em>
+              </h2>
               <p className="text-base text-navy/70 max-w-[42ch] leading-relaxed">
                 Ve&#8209;prene TPR is trusted by multinational footwear brands
                 and regional manufacturers across Pakistan.
