@@ -114,27 +114,35 @@ export function Divisions() {
       {/* Page 2 — Distribution */}
       <section id="distribution" className="min-h-screen bg-cream-dark border-b border-navy/10 flex items-center">
         <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-14 py-24 lg:py-32 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-12 lg:gap-16 items-center">
+
+          {/* Top — heading centered */}
+          <motion.div
+            className="text-center mb-14"
+            variants={fadeUpVariant}
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportOnce}
+          >
+            <SectionLabel number="02" label="Distribution" className="mb-6 text-navy/40 justify-center" />
+            <h2 className="font-display text-5xl md:text-6xl xl:text-7xl text-navy tracking-tight leading-tight">
+              Polymer
+              <br />
+              <em className="text-navy/40 not-italic">materials supply.</em>
+            </h2>
+          </motion.div>
+
+          {/* Middle — left content | video | right content */}
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] gap-8 lg:gap-12 items-center">
+
+            {/* Left — items list */}
             <motion.div
               variants={fadeUpVariant}
               initial="hidden"
               whileInView="visible"
               viewport={viewportOnce}
             >
-              <SectionLabel number="02" label="Distribution" className="mb-6 text-navy/40" />
-
-              <h2 className="font-display text-5xl md:text-6xl xl:text-7xl text-navy tracking-tight leading-tight mb-6">
-                Polymer
-                <br />
-                <em className="text-navy/40 not-italic">materials supply.</em>
-              </h2>
-
-              <p className="text-sm text-navy/50 leading-relaxed max-w-[52ch] mb-12">
-                Supplying the Pakistani market and trading globally in both prime
-                and off-grade polymer materials.
-              </p>
-
-              <div className="divide-y divide-navy/10 mb-12 max-w-2xl">
+              <p className="text-xs uppercase tracking-wider text-navy/40 mb-4">Materials</p>
+              <div className="divide-y divide-navy/10">
                 {distributionItems.map((item) => (
                   <div key={item} className="py-3.5 flex items-center gap-3 group">
                     <div className="w-1 h-1 rounded-full bg-navy/30 group-hover:bg-sienna transition-colors flex-shrink-0" />
@@ -142,8 +150,38 @@ export function Divisions() {
                   </div>
                 ))}
               </div>
+            </motion.div>
 
-              <div className="bg-cream border border-navy/10 p-5 max-w-sm">
+            {/* Center — video */}
+            <motion.div
+              className="flex items-center justify-center"
+              variants={fadeUpVariant}
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewportOnce}
+            >
+              <video
+                src="/videos/marekhtrading.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full max-h-[60vh] object-cover rounded-sm"
+              />
+            </motion.div>
+
+            {/* Right — description + coverage */}
+            <motion.div
+              variants={fadeUpVariant}
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewportOnce}
+            >
+              <p className="text-sm text-navy/50 leading-relaxed mb-10">
+                Supplying the Pakistani market and trading globally in both prime
+                and off-grade polymer materials.
+              </p>
+              <div className="bg-cream border border-navy/10 p-5">
                 <p className="text-xs uppercase tracking-wider text-navy/40 mb-1">Coverage</p>
                 <p className="text-sm text-navy/70">
                   Pakistan domestic market +{" "}
@@ -151,19 +189,8 @@ export function Divisions() {
                 </p>
               </div>
             </motion.div>
-
-            {/* Right — video */}
-            <div className="relative h-[60vh] lg:h-full min-h-[520px] flex items-center justify-center">
-              <video
-                src="/videos/marekhtrading.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="w-full h-full object-contain rounded-sm"
-              />
-            </div>
           </div>
+
         </div>
       </section>
     </>
