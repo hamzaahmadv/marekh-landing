@@ -8,7 +8,6 @@ const items = [
   { text: "Lahore, Pakistan", accent: false },
   { text: "Polymer Industry", accent: false },
   { text: "Global Distribution", accent: false },
-  { text: "Two Divisions", accent: false },
 ];
 
 export function AboutStrip() {
