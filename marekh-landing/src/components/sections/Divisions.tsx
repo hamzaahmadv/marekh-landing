@@ -114,42 +114,56 @@ export function Divisions() {
       {/* Page 2 — Distribution */}
       <section id="distribution" className="min-h-screen bg-cream-dark border-b border-navy/10 flex items-center">
         <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-14 py-24 lg:py-32 w-full">
-          <motion.div
-            variants={fadeUpVariant}
-            initial="hidden"
-            whileInView="visible"
-            viewport={viewportOnce}
-          >
-            <SectionLabel number="02" label="Distribution" className="mb-6 text-navy/40" />
+          <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-12 lg:gap-16 items-center">
+            <motion.div
+              variants={fadeUpVariant}
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewportOnce}
+            >
+              <SectionLabel number="02" label="Distribution" className="mb-6 text-navy/40" />
 
-            <h2 className="font-display text-5xl md:text-6xl xl:text-7xl text-navy tracking-tight leading-tight mb-6">
-              Polymer
-              <br />
-              <em className="text-navy/40 not-italic">materials supply.</em>
-            </h2>
+              <h2 className="font-display text-5xl md:text-6xl xl:text-7xl text-navy tracking-tight leading-tight mb-6">
+                Polymer
+                <br />
+                <em className="text-navy/40 not-italic">materials supply.</em>
+              </h2>
 
-            <p className="text-sm text-navy/50 leading-relaxed max-w-[52ch] mb-12">
-              Supplying the Pakistani market and trading globally in both prime
-              and off-grade polymer materials.
-            </p>
-
-            <div className="divide-y divide-navy/10 mb-12 max-w-2xl">
-              {distributionItems.map((item) => (
-                <div key={item} className="py-3.5 flex items-center gap-3 group">
-                  <div className="w-1 h-1 rounded-full bg-navy/30 group-hover:bg-sienna transition-colors flex-shrink-0" />
-                  <span className="text-sm text-navy/70">{item}</span>
-                </div>
-              ))}
-            </div>
-
-            <div className="bg-cream border border-navy/10 p-5 max-w-sm">
-              <p className="text-xs uppercase tracking-wider text-navy/40 mb-1">Coverage</p>
-              <p className="text-sm text-navy/70">
-                Pakistan domestic market +{" "}
-                <span className="text-navy/50">international trade</span>
+              <p className="text-sm text-navy/50 leading-relaxed max-w-[52ch] mb-12">
+                Supplying the Pakistani market and trading globally in both prime
+                and off-grade polymer materials.
               </p>
+
+              <div className="divide-y divide-navy/10 mb-12 max-w-2xl">
+                {distributionItems.map((item) => (
+                  <div key={item} className="py-3.5 flex items-center gap-3 group">
+                    <div className="w-1 h-1 rounded-full bg-navy/30 group-hover:bg-sienna transition-colors flex-shrink-0" />
+                    <span className="text-sm text-navy/70">{item}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="bg-cream border border-navy/10 p-5 max-w-sm">
+                <p className="text-xs uppercase tracking-wider text-navy/40 mb-1">Coverage</p>
+                <p className="text-sm text-navy/70">
+                  Pakistan domestic market +{" "}
+                  <span className="text-navy/50">international trade</span>
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Right — video */}
+            <div className="relative h-[60vh] lg:h-full min-h-[520px] flex items-center justify-center">
+              <video
+                src="/videos/marekhtrading.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-full object-contain rounded-sm"
+              />
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </>
