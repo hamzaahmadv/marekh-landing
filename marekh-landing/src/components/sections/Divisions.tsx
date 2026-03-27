@@ -113,17 +113,17 @@ export function Divisions() {
 
       {/* Page 2 — Distribution */}
       <section id="distribution" className="min-h-screen bg-cream-dark border-b border-navy/10 flex items-center">
-        <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-14 py-24 lg:py-32 w-full">
+        <div className="max-w-7xl mx-auto px-8 md:px-12 lg:px-14 py-16 lg:py-20 w-full">
 
           {/* Top — heading centered */}
           <motion.div
-            className="text-center mb-14"
+            className="text-center mb-10"
             variants={fadeUpVariant}
             initial="hidden"
             whileInView="visible"
             viewport={viewportOnce}
           >
-            <SectionLabel number="02" label="Distribution" className="mb-6 text-navy/40 justify-center" />
+            <SectionLabel number="02" label="Distribution" className="mb-5 text-navy/40 justify-center" />
             <h2 className="font-display text-5xl md:text-6xl xl:text-7xl text-navy tracking-tight leading-tight">
               Polymer
               <br />
@@ -132,7 +132,7 @@ export function Divisions() {
           </motion.div>
 
           {/* Middle — left content | video | right content */}
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_2.5fr_1fr] gap-6 lg:gap-10 items-center">
 
             {/* Left — items list */}
             <motion.div
@@ -145,8 +145,8 @@ export function Divisions() {
               <div className="divide-y divide-navy/10">
                 {distributionItems.map((item) => (
                   <div key={item} className="py-3.5 flex items-center gap-3 group">
-                    <div className="w-1 h-1 rounded-full bg-navy/30 group-hover:bg-sienna transition-colors flex-shrink-0" />
-                    <span className="text-sm text-navy/70">{item}</span>
+                    <div className="w-1.5 h-1.5 rounded-full bg-navy/30 group-hover:bg-sienna transition-colors flex-shrink-0" />
+                    <span className="text-base text-navy/70">{item}</span>
                   </div>
                 ))}
               </div>
@@ -154,7 +154,7 @@ export function Divisions() {
 
             {/* Center — video */}
             <motion.div
-              className="flex items-center justify-center"
+              className="flex items-center justify-center w-full"
               variants={fadeUpVariant}
               initial="hidden"
               whileInView="visible"
@@ -166,7 +166,7 @@ export function Divisions() {
                 muted
                 loop
                 playsInline
-                className="w-full max-h-[60vh] object-cover rounded-sm"
+                className="w-full aspect-video object-cover rounded-sm"
               />
             </motion.div>
 
@@ -177,13 +177,13 @@ export function Divisions() {
               whileInView="visible"
               viewport={viewportOnce}
             >
-              <p className="text-sm text-navy/50 leading-relaxed mb-10">
+              <p className="text-base text-navy/60 leading-relaxed mb-10">
                 Supplying the Pakistani market and trading globally in both prime
                 and off-grade polymer materials.
               </p>
               <div className="bg-cream border border-navy/10 p-5">
-                <p className="text-xs uppercase tracking-wider text-navy/40 mb-1">Coverage</p>
-                <p className="text-sm text-navy/70">
+                <p className="text-xs uppercase tracking-wider text-navy/40 mb-2">Coverage</p>
+                <p className="text-base text-navy/70">
                   Pakistan domestic market +{" "}
                   <span className="text-navy/50">international trade</span>
                 </p>
