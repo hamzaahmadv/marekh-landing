@@ -42,11 +42,6 @@ export function Hero() {
         animate="visible"
       >
         <div className="max-w-xl">
-          {/* Eyebrow */}
-          <p className="text-xs font-medium uppercase tracking-[0.15em] text-sienna mb-6">
-            Est. 1989 · Lahore, Pakistan
-          </p>
-
           {/* Headline */}
           <h1 className="font-display text-5xl md:text-6xl xl:text-7xl leading-[1.05] tracking-tight text-navy mb-6">
             Polymer
