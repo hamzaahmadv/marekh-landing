@@ -30,7 +30,7 @@ export function CustomersSection() {
                 <br />
                 <em className="text-navy/50 not-italic">the industry.</em>
               </h2>
-              <p className="text-base text-navy/70 max-w-[42ch] leading-relaxed">
+              <p className="text-lg text-navy/70 max-w-[42ch] leading-relaxed">
                 Ve&#8209;prene TPR is trusted by multinational footwear brands
                 and regional manufacturers across Pakistan.
               </p>
