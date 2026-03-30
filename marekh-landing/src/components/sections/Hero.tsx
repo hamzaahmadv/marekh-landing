@@ -52,7 +52,7 @@ export function Hero() {
           </h1>
 
           {/* Body */}
-          <p className="text-base text-navy/60 leading-relaxed max-w-[52ch] mb-10">
+          <p className="font-sans text-lg text-navy/70 leading-relaxed tracking-wide max-w-[48ch] mb-10">
             Trusted supplier of synthetic rubber, plastics, and chemical
             additives to Pakistan&apos;s polymer industry.
           </p>
