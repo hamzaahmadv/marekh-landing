@@ -68,12 +68,29 @@ export function VepreneSection() {
               <br />
               <em className="text-cream/70 not-italic">for footwear.</em>
             </h2>
-            <p className="font-sans text-lg text-cream/85 leading-relaxed tracking-wide max-w-[44ch] mb-6">
+            <p className="font-sans text-lg text-cream/85 leading-relaxed tracking-wide max-w-[44ch] mb-8">
               Ve&#8209;prene is Marekh&apos;s proprietary thermoplastic rubber,
               developed over two decades for the footwear manufacturing industry.
-              It combines the performance characteristics of vulcanised rubber
-              with the processing ease of thermoplastics.
             </p>
+
+            {/* Custom formulation callout */}
+            <motion.div
+              variants={fadeUpVariant}
+              className="bg-sienna/10 border border-sienna/30 p-6"
+            >
+              <p className="text-xs uppercase tracking-wider text-sienna mb-3 font-medium">
+                Custom Formulation
+              </p>
+              <p className="text-base text-cream/80 leading-relaxed mb-5">
+                Contact our team to discuss your application needs.
+              </p>
+              <MarekButton variant="outline-sienna" href="#contact">
+                Discuss Requirements
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </MarekButton>
+            </motion.div>
           </motion.div>
 
           {/* Right spec list */}
@@ -97,27 +114,6 @@ export function VepreneSection() {
                 </motion.div>
               ))}
             </div>
-
-            {/* Custom formulation callout */}
-            <motion.div
-              variants={fadeUpVariant}
-              className="mt-8 bg-sienna/10 border border-sienna/30 p-6"
-            >
-              <p className="text-xs uppercase tracking-wider text-sienna mb-3 font-medium">
-                Custom Formulation
-              </p>
-              <p className="text-base text-cream/80 leading-relaxed mb-5">
-                Marekh provides technical assistance to develop tailor-made
-                materials meeting specific customer requirements. Contact our
-                team to discuss your application needs.
-              </p>
-              <MarekButton variant="outline-sienna" href="#contact">
-                Discuss Requirements
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                  <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </MarekButton>
-            </motion.div>
           </motion.div>
         </div>
       </div>
