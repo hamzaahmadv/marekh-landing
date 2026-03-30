@@ -36,7 +36,7 @@ export function PolymerSection() {
               </em>
             </h2>
 
-            <p className="text-sm text-navy/60 leading-relaxed max-w-[52ch] mb-12">
+            <p className="font-sans text-base text-navy/75 leading-relaxed tracking-wide max-w-[48ch] mb-12">
               Marekh&apos;s own brand of footwear TPR — engineered for high
               elasticity and ease of processing. No vulcanisation required,
               significantly reducing production cost and time.
@@ -55,10 +55,10 @@ export function PolymerSection() {
                   variants={fadeUpVariant}
                   className="grid grid-cols-[160px_1fr] py-3.5 hover:bg-navy/5 transition-colors -mx-1 px-1 group"
                 >
-                  <span className="text-xs uppercase tracking-wider text-navy/40 group-hover:text-navy/60 transition-colors self-center">
+                  <span className="font-sans text-[11px] uppercase tracking-widest text-navy/50 group-hover:text-navy/70 transition-colors self-center font-semibold">
                     {f.label}
                   </span>
-                  <span className="text-sm text-navy/80">{f.value}</span>
+                  <span className="font-sans text-base text-navy/85 leading-snug">{f.value}</span>
                 </motion.div>
               ))}
             </motion.div>
