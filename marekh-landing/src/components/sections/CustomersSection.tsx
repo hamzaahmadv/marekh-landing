@@ -73,24 +73,24 @@ export function CustomersSection() {
             viewport={viewportOnce}
             className="lg:pt-20"
           >
-            <div className="bg-navy p-6 lg:p-8">
-              <p className="text-xs uppercase tracking-wider text-cream/70 mb-4 font-medium">
+            <div className="bg-navy p-8 lg:p-12">
+              <p className="text-sm uppercase tracking-widest text-cream/70 mb-6 font-semibold">
                 Supply Coverage
               </p>
-              <p className="text-base text-cream/80 leading-relaxed mb-6">
+              <p className="font-sans text-lg text-cream/85 leading-relaxed tracking-wide mb-8">
                 Marekh supplies the domestic Pakistani market while maintaining
                 active trading relationships internationally in both prime and
                 off-grade polymer materials.
               </p>
-              <div className="border-t border-cream/10 pt-5 space-y-3">
+              <div className="border-t border-cream/10 pt-7 space-y-5">
                 {[
                   "Prime materials sourced globally",
                   "Off-grade materials for cost-sensitive applications",
                   "Technical support for custom requirements",
                 ].map((point) => (
                   <div key={point} className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 rounded-full bg-sienna mt-2 flex-shrink-0" />
-                    <span className="text-sm text-cream/70">{point}</span>
+                    <div className="w-2 h-2 rounded-full bg-sienna mt-2 flex-shrink-0" />
+                    <span className="font-sans text-base text-cream/80">{point}</span>
                   </div>
                 ))}
               </div>
