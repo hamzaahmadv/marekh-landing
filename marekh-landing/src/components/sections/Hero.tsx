@@ -54,8 +54,7 @@ export function Hero() {
           {/* Body */}
           <p className="text-base text-navy/60 leading-relaxed max-w-[52ch] mb-10">
             Trusted supplier of synthetic rubber, plastics, and chemical
-            additives to Pakistan&apos;s polymer industry. Manufacturer of
-            Ve&#8209;prene TPR for the global footwear market.
+            additives to Pakistan&apos;s polymer industry.
           </p>
 
           {/* CTAs */}
