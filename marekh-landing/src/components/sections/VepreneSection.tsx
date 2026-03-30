@@ -68,16 +68,11 @@ export function VepreneSection() {
               <br />
               <em className="text-cream/70 not-italic">for footwear.</em>
             </h2>
-            <p className="text-base text-cream/80 leading-relaxed mb-6">
+            <p className="font-sans text-lg text-cream/85 leading-relaxed tracking-wide max-w-[44ch] mb-6">
               Ve&#8209;prene is Marekh&apos;s proprietary thermoplastic rubber,
               developed over two decades for the footwear manufacturing industry.
               It combines the performance characteristics of vulcanised rubber
               with the processing ease of thermoplastics.
-            </p>
-            <p className="text-base text-cream/60 leading-relaxed">
-              The material is trusted by global brands and regional manufacturers
-              alike for sole production, valued for its consistency, workability,
-              and cost-effectiveness.
             </p>
           </motion.div>
 
@@ -95,10 +90,10 @@ export function VepreneSection() {
                   variants={fadeUpVariant}
                   className="grid grid-cols-[160px_1fr] py-5 gap-4 hover:bg-cream/5 transition-colors -mx-2 px-2 group"
                 >
-                  <span className="text-xs uppercase tracking-wider text-cream/60 self-start pt-0.5 group-hover:text-cream/80 transition-colors font-medium">
+                  <span className="font-sans text-sm uppercase tracking-widest text-sienna/80 self-start pt-1 group-hover:text-sienna transition-colors font-semibold">
                     {s.spec}
                   </span>
-                  <span className="text-base text-cream/85 leading-relaxed">{s.description}</span>
+                  <span className="font-sans text-base text-cream/90 leading-relaxed">{s.description}</span>
                 </motion.div>
               ))}
             </div>
