@@ -11,7 +11,7 @@ const contactDetails = [
     href: undefined,
   },
   { label: "Phone", value: "+92 42 5118449", href: "tel:+924251184499" },
-  { label: "", value: "+92 42 5122433", href: "tel:+924251224399" },
+  { label: "", value: "+92 300 8441582", href: "tel:+923008441582" },
   { label: "Email", value: "sales@marekh.com", href: "mailto:sales@marekh.com" },
 ];
 
