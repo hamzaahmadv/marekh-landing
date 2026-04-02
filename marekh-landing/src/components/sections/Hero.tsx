@@ -77,7 +77,7 @@ export function Hero() {
 
       {/* Right panel — Deep Navy */}
       <motion.div
-        className="relative bg-navy min-h-[40vh] lg:min-h-0 overflow-hidden"
+        className="relative bg-navy min-h-[60vh] lg:min-h-0 overflow-hidden flex flex-col"
         variants={heroRight}
         initial="hidden"
         animate="visible"
@@ -86,7 +86,7 @@ export function Hero() {
 
         {/* Hero video */}
         <div
-          className="absolute inset-0 bottom-36 lg:bottom-44 flex items-center justify-center p-4 lg:p-8 pt-16 lg:pt-20"
+          className="relative flex-1 flex items-center justify-center p-2 lg:p-8 pt-4 lg:pt-20"
           style={{
             maskImage: "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%)",
             WebkitMaskImage: "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%)",
@@ -103,29 +103,23 @@ export function Hero() {
         </div>
 
         {/* Stat chips */}
-        <div className="absolute bottom-8 left-8 right-8 flex flex-col gap-3 lg:bottom-12 lg:left-10">
+        <div className="relative z-10 flex flex-wrap gap-2 lg:gap-3 px-4 pb-4 lg:px-10 lg:pb-10">
           <motion.div
-            className="inline-flex items-center gap-3 bg-navy-dark/80 backdrop-blur-sm border border-cream/15 px-4 py-3 w-fit"
+            className="inline-flex items-center gap-2 lg:gap-3 bg-navy-dark/80 backdrop-blur-sm border border-cream/15 px-3 py-2 lg:px-4 lg:py-3 w-fit"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
           >
-            <span className="text-2xl font-display text-cream tracking-tight">35+</span>
-            <span className="text-xs text-cream/50 uppercase tracking-wider">Years in industry</span>
+            <span className="text-lg lg:text-2xl font-display text-cream tracking-tight">35+</span>
+            <span className="text-[10px] lg:text-xs text-cream/50 uppercase tracking-wider">Years in industry</span>
           </motion.div>
           <motion.div
-            className="inline-flex items-center gap-3 bg-navy-dark/80 backdrop-blur-sm border border-cream/15 px-4 py-3 w-fit"
+            className="inline-flex items-center gap-2 lg:gap-3 bg-navy-dark/80 backdrop-blur-sm border border-cream/15 px-3 py-2 lg:px-4 lg:py-3 w-fit"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
           >
-            <span className="text-2xl font-display text-cream tracking-tight">Global</span>
-            <span className="text-xs text-cream/50 uppercase tracking-wider">Prime &amp; off-grade trade</span>
+            <span className="text-lg lg:text-2xl font-display text-cream tracking-tight">Global</span>
+            <span className="text-[10px] lg:text-xs text-cream/50 uppercase tracking-wider">Prime &amp; off-grade trade</span>
           </motion.div>
-        </div>
-
-        {/* Ve-prene label */}
-        <div className="absolute top-8 right-8 text-right">
-          <p className="text-xs uppercase tracking-[0.2em] text-cream/30">Ve&#8209;prene</p>
-          <p className="text-xs text-cream/20">Thermoplastic Rubber</p>
         </div>
       </motion.div>
     </section>
