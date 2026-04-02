@@ -7,20 +7,12 @@ import { MarekButton } from "@/components/ui/MarekButton";
 
 const specs = [
   {
-    spec: "Transparency",
-    description: "Available in transparent, translucent, and fully opaque formulations.",
-  },
-  {
-    spec: "Color Range",
-    description: "Custom color matching available.",
+    spec: "Application",
+    description: "Suitable for direct injection onto uppers or as unit soles in footwear production.",
   },
   {
     spec: "Processing",
     description: "Direct processing on standard injection equipment.",
-  },
-  {
-    spec: "Application",
-    description: "Suitable for direct injection onto uppers or as unit soles in footwear production.",
   },
   {
     spec: "Elasticity",
@@ -29,6 +21,14 @@ const specs = [
   {
     spec: "Customisation",
     description: "Technical assistance available to develop tailor-made compounds.",
+  },
+  {
+    spec: "Color Range",
+    description: "Custom color matching available.",
+  },
+  {
+    spec: "Transparency",
+    description: "Available in transparent, translucent, and fully opaque formulations.",
   },
 ];
 
