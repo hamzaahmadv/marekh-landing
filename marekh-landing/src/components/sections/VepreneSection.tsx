@@ -12,11 +12,11 @@ const specs = [
   },
   {
     spec: "Color Range",
-    description: "Supplied in a wide variety of fashion colors. Custom color matching available.",
+    description: "Custom color matching available.",
   },
   {
     spec: "Processing",
-    description: "No vulcanisation required. Direct processing on standard injection equipment.",
+    description: "Direct processing on standard injection equipment.",
   },
   {
     spec: "Application",
@@ -24,11 +24,11 @@ const specs = [
   },
   {
     spec: "Elasticity",
-    description: "High degree of elasticity comparable to conventional rubber without the cure cycle.",
+    description: "High degree of elasticity.",
   },
   {
     spec: "Customisation",
-    description: "Technical assistance available to develop tailor-made compounds for specific applications.",
+    description: "Technical assistance available to develop tailor-made compounds.",
   },
 ];
 
