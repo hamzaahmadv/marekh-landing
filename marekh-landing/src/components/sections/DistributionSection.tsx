@@ -43,12 +43,12 @@ export function DistributionSection() {
             whileInView="visible"
             viewport={viewportOnce}
           >
-            <p className="text-xs uppercase tracking-wider text-navy/40 mb-4">Materials</p>
+            <p className="text-xs uppercase tracking-widest font-semibold text-navy/50 mb-5">Materials</p>
             <div className="divide-y divide-navy/10">
               {distributionItems.map((item) => (
-                <div key={item} className="py-3.5 flex items-center gap-3 group">
-                  <div className="w-1.5 h-1.5 rounded-full bg-navy/30 group-hover:bg-sienna transition-colors flex-shrink-0" />
-                  <span className="text-base text-navy/70">{item}</span>
+                <div key={item} className="py-4 flex items-center gap-4 group">
+                  <div className="w-2 h-2 rounded-full bg-sienna/50 group-hover:bg-sienna transition-colors flex-shrink-0" />
+                  <span className="font-sans text-lg text-navy/80 leading-snug">{item}</span>
                 </div>
               ))}
             </div>
@@ -79,15 +79,16 @@ export function DistributionSection() {
             whileInView="visible"
             viewport={viewportOnce}
           >
-            <p className="text-base text-navy/60 leading-relaxed mb-10">
+            <p className="font-sans text-lg text-navy/70 leading-relaxed mb-10">
               Supplying the Pakistani market and trading globally in both prime
               and off-grade polymer materials.
             </p>
             <div className="bg-cream border border-navy/10 p-5">
-              <p className="text-xs uppercase tracking-wider text-navy/40 mb-2">Coverage</p>
-              <p className="text-base text-navy/70">
-                Pakistan domestic market +{" "}
-                <span className="text-navy/50">international trade</span>
+              <p className="text-xs uppercase tracking-widest font-semibold text-navy/50 mb-3">Coverage</p>
+              <p className="font-sans text-lg text-navy/80 leading-snug">
+                Pakistan domestic market
+                <br />
+                <span className="text-navy/50">+ international trade</span>
               </p>
             </div>
           </motion.div>
